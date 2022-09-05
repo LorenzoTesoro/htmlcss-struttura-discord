@@ -1,0 +1,48 @@
+/* Common rules */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+}
+
+.col-9 {
+    width: calc((100% / 12) * 9);
+}
+
+/* Debug  */
+
+.debug [class^="col-"]{
+    background-color: red;
+    border:1px solid black;
+}
+
+header, footer{
+    background-color: grey;
+    color:white;
+}
+
+/* header */
+
+header .col-6{
+    text-align: center;
+}
