@@ -17,24 +17,38 @@
     flex-wrap: wrap;
 }
 
+.col-2{
+    width: calc((100% / 12) * 2);
+}
+
 .col-3 {
     width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
 }
 
 .col-6 {
     width: calc((100% / 12) * 6);
 }
 
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+
 .col-9 {
     width: calc((100% / 12) * 9);
 }
 
-
 section{
-    padding-top:1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
+section .row{
+    height:200px;
+}
 /* Debug  */
 
 .debug [class^="col-"]{
@@ -42,41 +56,60 @@ section{
     border:1px solid black;
 }
 
-header, footer{
-    background-color: grey;
-    color:white;
-}
-
 /* header */
 
-header .col-6{
-    text-align: center;
+header{
+    background-color: cadetblue;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
 }
 
 /* main */
 
-section:nth-child(1){
-    height:400px;
+.page_description{
     background-color: blue;
 }
-
-.title{
-    height: 300px;
-    width:500px;
+.page_description_content{
     background-color: blueviolet;
-    margin:0 auto;
+    border:1px solid black;
+    height: 200px;
+    width:60%;
+    margin: 0 auto;
+}
+
+section:nth-child(3), section:nth-child(5)
+{background-color: green;
+}
+
+.download > .container{
+    height: 200px;
+    width:80%;
+    background-color: rosybrown;
     border:1px solid black;
 }
 
-section .row{
-    margin-top:2rem;
+/* footer */
+
+footer{
+    background-color: violet;
+}
+footer .row{
+    height:100px;
+    border:1px solid black;
 }
 
-.last-section.container{
-    height:300px;
-    background-color: green;
+.container.logo{
+    background-color: darksalmon;
 }
 
-.grey{
-    background-color: grey;
+.row .logo, .row .button{
+    height:50%;
+    width:10%;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.row.company{
+    align-content: center;
+    justify-content: space-between;
 }
